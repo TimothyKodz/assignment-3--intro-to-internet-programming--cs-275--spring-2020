@@ -19,6 +19,7 @@ boxA.onclick = function aClick() {
 
     //flip and unflip if necessassairy
     boxA.style.color = `blue`;
+    boxA.style.transform = `rotate(180deg)`;
 
     bStatus = checkFlip(boxB, bStatus);
     cStatus = checkFlip(boxC, cStatus);
@@ -29,7 +30,7 @@ boxB.onclick = function bClick() {
     bStatus = Boolean(true);
 
     boxB.style.color = `blue`;
-    boxB.style.transform = rotate(180);
+    boxB.style.transform = `rotate(180deg)`;
 
     aStatus = checkFlip(boxA, aStatus);
     cStatus = checkFlip(boxC, cStatus);
@@ -40,6 +41,7 @@ boxC.onclick = function cClick() {
     cStatus = Boolean(true);
 
     boxC.style.color = `blue`;
+    boxC.style.transform = `rotate(180deg)`;
 
     aStatus = checkFlip(boxA, aStatus);
     bStatus = checkFlip(boxB, bStatus);
@@ -50,6 +52,7 @@ boxD.onclick = function dClick() {
     dStatus = Boolean(true);
 
     boxD.style.color = `blue`;
+    boxD.style.transform = `rotate(180deg)`;
 
     aStatus = checkFlip(boxA, aStatus);
     bStatus = checkFlip(boxB, bStatus);
@@ -59,6 +62,7 @@ boxD.onclick = function dClick() {
 function checkFlip(boxVal, box) {
     if (box == true) {
         boxVal.style.color = `black`;
+        boxVal.style.transform = `rotate(0)`;
         box = Boolean(false);
         return box;
     }
