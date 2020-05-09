@@ -6,4 +6,5 @@ table {
 table td {
   border: 1px solid #b30b0b;
   padding: 20px;
+  transition: all 500ms;
 }
