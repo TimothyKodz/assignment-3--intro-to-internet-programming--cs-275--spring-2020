@@ -17,7 +17,6 @@ let dStatus = new Boolean(false);
 boxA.onclick = function aClick() {
     aStatus = Boolean(true);
 
-    //flip and unflip if necessassairy
     boxA.style.color = `blue`;
     boxA.style.transform = `rotate(180deg)`;
 
